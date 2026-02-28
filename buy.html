@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets - Gen-Z Culture meets Christhood</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="C:\Users\hp\Desktop\Website\images\Gen-z Culture meets Christhood.jpg" type="image/jpeg">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="cta" href="events.html">← Back to Events</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <form id="ticketForm">
+                <input type="hidden" id="eventName" name="eventName" value="">
+
+                <label for="fullName">Full Name</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Your name" required>
+
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="+2547XXXXXXXX" required>
+
+                <label for="quantity">Quantity</label>
+                <input id="quantity" name="quantity" type="number" min="1" value="1" required>
+
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    <label><input type="radio" name="payment" value="mpesa" checked> M-Pesa</label>
+                </fieldset>
+
+                <button type="submit" class="cta">Proceed to Vendor</button>
+            </form>
+            <p id="ticketMessage" class="muted"></p>
+        </section>
+    </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
